@@ -46,8 +46,9 @@ export const LocationSelector: React.FC<Props> = ({
       try {
         setLoading(true);
         const res = await fetch(
-          `/api/villages/search?q=${encodeURIComponent(query)}`
-        );
+  `https://village-backend-gq3k.onrender.com/api/villages/search?q=${encodeURIComponent(query)}`
+);
+
         const data = await res.json();
         setResults(data);
         setOpen(true);
