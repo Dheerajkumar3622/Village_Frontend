@@ -8,11 +8,11 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/socket.io': {
-        target: 'http://localhost:3001',
+        target: 'https://village-backend-gq3k.onrender.com',
         ws: true
       },
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'https://village-backend-gq3k.onrender.com',
         changeOrigin: true
       }
     }
